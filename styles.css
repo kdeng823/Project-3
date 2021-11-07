@@ -1,0 +1,207 @@
+@font-face {font-family: "Century Gothic";
+  src: url("fonts/century-gothic.eot");
+}
+
+@media (max-width: 40em) {
+  .button-wrap {
+    margin-top: -1.5em;
+  }
+}
+
+html body {
+  background: #202124;
+  color: #f5f5f5
+}
+
+h1{
+text-decoration: underline;
+}
+
+h2 {
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#hud{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.hud-prefix{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width:100vw;
+  min-height: 100%;
+}
+
+.button-wrap {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  margin-top: -2.5em;
+}
+
+.button-label {
+  font-family: "Century Gothic";
+  display: inline-block;
+  padding: .45em 2em;
+  margin: 0.25em;
+  cursor: pointer;
+  color: #292929;
+  border-radius: 0.25em;
+  background: #efefef;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.button-label h1 {
+  font-size: 1em;
+  font-family: "Century Gothic", sans-serif;
+}
+.button-label:hover {
+  background: #d6d6d6;
+  color: #101010;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.32);
+}
+.button-label:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0px -1px 0 rgba(0, 0, 0, 0.22);
+}
+@media (max-width: 40em) {
+  .button-label {
+    padding: 0em 1em 3px;
+    margin: 0.25em;
+  }
+}
+
+
+#choice{
+  width: 50%;
+  font-family: "Century Gothic", Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#choice:hover{
+  background-color: #ff2d50;
+}
+
+
+.choice {
+  display: flex;
+  margin-bottom: 0.85rem;
+  font-size: 1.8rem;
+  border: 0rem solid darkred;
+  border-radius: 100px;
+  width:50%;
+}
+
+.prefix {
+  transform: translateY(.5rem);
+  padding: 01.5rem 2.5rem;
+  background-color: #ff2d50;
+  color: white;
+  border-radius: 100px;
+}
+
+.choice_text {
+  padding: 1.5rem;
+}
+
+#name {
+    font-family: "Century Gothic", Helvetica, sans-serif;
+    width: 15%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border: thin solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: width 0.4s ease-in-out;
+}
+
+#name:focus
+{
+width:20%
+}
+
+.text-input{
+  font-family: "Century Gothic", Helvetica, sans-serif;
+  width: 25%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border: thin solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: width 0.4s ease-in-out;
+}
+
+.text-input:focus
+{
+  width:40%
+}
+#quiz1:checked + .button-label {
+  background: #ff2d50;
+  color: #efefef;
+}
+#quiz1:checked + .button-label:hover {
+  background: #ff2d50;
+  color: #e2e2e2;
+}
+
+#quiz2:checked + .button-label {
+  background: #ff2d50;
+  color: #efefef;
+}
+#quiz2:checked + .button-label:hover {
+  background: #ff2d50;
+  color: #e2e2e2;
+}
+
+#choice:focus{
+    background: #ff2d50;
+    color: #efefef;
+  }
+
+
+#submit-btn {
+  width: 5%;
+  font-family: "Century Gothic", Helvetica, sans-serif;
+  background-color: #ff2d50;
+  color: white;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  background-color: darkred;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+input[type="radio"] {
+  display:none
+}
+
+div{
+  font-family: "Century Gothic", Helvetica, sans-serif;
+}
