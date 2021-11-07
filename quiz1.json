@@ -1,0 +1,212 @@
+[
+  {
+    "questionType": "multiple_choice",
+    "questionText": "In web design, what does CSS stand for?",
+    "correctAnswer": "Cascading Style Sheet",
+    "options": [
+      "Corrective Style Sheet",
+      "Cascading Style Sheet",
+      "Computer Style Sheet",
+      "Counter Strike: Source"
+    ],
+    "explanation":"CSS in web design stands for Cascading Style Sheet."
+  },
+  {
+    "questionType": "dropdown_selection",
+    "questionText": "In Java, to implement an interface method, it must be declared as _______",
+    "correctAnswer": "Public",
+    "answerFieldId": "answer_to_question",
+    "options": [
+      "Private",
+      "Public",
+      "Friend",
+      "Protected"
+    ],
+    "explanation":" To implement an interface method in Java, it must be declared as Public."
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionText": "What does the computer software acronym JVM stand for?",
+    "correctAnswer": "Java Virtual Machine",
+    "options": [
+      "Java Virtual Machine",
+      "Java Vendor Machine",
+      "Just Virtual Machine",
+      "Java Visual Machine"
+    ],
+    "explanation":"JVM stands for Java Virtual Machine."
+  },
+  {
+    "questionType": "true_false",
+    "questionText": "Andaconda is a programming language.",
+    "correctAnswer": "False",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation": "Andaconda is not a programming language."
+  },  
+  {
+    "questionType": "true_false",
+    "questionText": "In Java, applets are embedded in another applications.",
+    "correctAnswer": "True",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation": "Applets are embedded in another applications."
+  },
+  {
+    "questionType": "image_selection",
+    "questionText": "What of these logos is a programming language?",
+    "correctAnswer": "https://1000logos.net/wp-content/uploads/2020/08/Python-Emblem.jpg",
+    "options": [
+      "https://d1.awsstatic.com/sdks-and-tools/eclipse%20icon%201.3778a4cbe978d8dfd73c091706e26aa6c57c65aa.jpeg",
+      "https://miro.medium.com/max/1200/1*N8Uwuj4le6YDIOrlrDhCtg.png",
+      "https://seeklogo.com/images/A/atom-logo-19BD90FF87-seeklogo.com.png",
+      "https://1000logos.net/wp-content/uploads/2020/08/Python-Emblem.jpg"
+    ],
+    "explanation": "The 4th logo is the logo for Python."
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionText": "The programming language 'Swift' was created to replace what other programming language?",
+    "correctAnswer": "Objective-C",
+    "options": [
+      "C#",
+      "Ruby",
+      "Objective-C",
+      "C++"
+    ],
+    "explanation":"Swift was created in order to replace Objective-C."
+  },
+  {
+    "questionType": "true_false",
+    "questionText": "In Java, a class can inherit from multiple abstract classes.",
+    "correctAnswer": "False",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation": "Java classes cannot inherit from multiple abstract classes."
+  },
+  {
+    "questionType": "image_selection",
+    "questionText": "What major programming language does Unreal Engine 4 use?",
+    "correctAnswer": "https://e7.pngegg.com/pngimages/46/626/png-clipart-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template.png",
+    "options": [
+      "https://hwu71.github.io/photos/asm.png",
+      "https://e7.pngegg.com/pngimages/46/626/png-clipart-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template.png",
+      "https://raw.githubusercontent.com/wingsuitist/ecmascript-logo/master/es-ecmascript-logo.png",
+      "https://fwangzones.com/wp-content/uploads/2020/08/C.png"
+    ],
+    "explanation": "Unreal Engine uses C++."
+  },
+  {
+    "questionType": "text_input",
+    "questionText": "What line of code would you use to print 'Hello' in Python?",
+    "correctAnswer": "print()",
+    "answerFieldId": "answer_to_question",
+    "explanation": "You would use the print() function to print Hello by doing print('Hello')"
+  },
+  {
+    "questionType": "true_false",
+    "questionText": "RAM stands for Random Access Memory.",
+    "correctAnswer": "True",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation":"RAM stands for Random Access Memory"
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionText": "In Java, what would be the output of: int l; System.out.println(l);",
+    "correctAnswer": "Length of array can be changed after creation of array",
+    "options": [
+      "Compile Error",
+      "L",
+      "Runtime Error",
+      "Garbage Value"
+    ],
+    "explanation": "Local variables of methods must be assigned a value to before they are accessed, or it will result in a compile error."
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionText": "Which of the following is false about arrays in Java?",
+    "correctAnswer": "Length of array can be changed after creation of array",
+    "options": [
+      "Java arrays are always objects",
+      "Arrays in Java are always allocated on heap",
+      "The length of an array can be changed after its creation",
+      "None are correct."
+    ],
+    "explanation": "In Java, arrays are objects and have members such as length. The length member is final and cannot be changed. All objects are allocated on heap in Java, so arrays are also allocated on heap."
+  },
+  {
+    "questionType": "dropdown_selection",
+    "questionText": "When a function is defined inside a class in Python it is called a ______",
+    "correctAnswer": "Method",
+    "answerFieldId": "answer_to_question",
+    "options": [
+      "Module",
+      "Another Function",
+      "Method",
+      "Class"
+    ],
+    "explanation":"In Python, when a function is defined inside it is called a method."
+  },
+  {
+    "questionType": "text_input",
+    "questionText": "In Python, what is the output of '5*1**5'",
+    "correctAnswer": "5",
+    "answerFieldId": "answer_to_question",
+    "explanation": "Precedence of ** is higher than that of 5, executing 1**5 first and multiplying the results by 5."
+  },
+  {
+    "questionType": "true_false",
+    "questionText": "time.time() returns the current time.",
+    "correctAnswer": "False",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation":"time.time() returns the current time in milliseconds since midnight, January 1, 1970 GMT"
+  },
+  {
+    "questionType": "text_input",
+    "questionText": "How many values does a boolean represent?",
+    "correctAnswer": "2",
+    "answerFieldId": "answer_to_question",
+    "explanation":"A boolean represents two possible values using being True or False."
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionText": "  Which operating system was released first?",
+    "correctAnswer": "Mac OS",
+    "options": [
+      "Windows",
+      "Mac OS",
+      "Linux",
+      "OS/2"
+    ],
+    "explanation": "Local variables of methods must be assigned a value to before they are accessed, or it will result in a compile error."
+  },
+  {
+    "questionType": "text_input",
+    "questionText": " What is the output of: print type(type(int))",
+    "correctAnswer": "type 'type'",
+    "answerFieldId": "answer_to_question",
+    "explanation": "The type() function returns the class of the argument the object belongs to. Therefore type(int) returns which is of the type ‘type’ object."
+  },
+  {
+    "questionType": "true_false",
+    "questionText": "HTML stands for Hypertext Markup Language.",
+    "correctAnswer": "True",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation":"HTML stands for Hypertext Markup Language."
+  }
+]

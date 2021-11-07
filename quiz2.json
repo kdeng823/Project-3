@@ -1,0 +1,213 @@
+[
+  {
+    "questionType": "multiple_choice",
+    "questionText": "On which computer hardware component is the BIOS chip located?",
+    "correctAnswer": "Motherboard",
+    "options": [
+      "Central Processing Unit",
+      "Hard Drive",
+      "Graphics Processing Unit",
+      "Motherboard"
+    ],
+    "explanation":"The Bios chip in a computer is located in the motherboard."
+  },
+  {
+    "questionType": "dropdown_selection",
+    "questionText": "Which coding language was the most popular programming language on GitHub in 2015?",
+    "correctAnswer": "JavaScript",
+    "answerFieldId": "answer_to_question",
+    "options": [
+      "Python",
+      "C++",
+      "JavaScript",
+      "C#"
+    ],
+    "explanation":" JavaScript was the most popular programming lnaguage on Github in 2015."
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionText": "Which of the following is considered a low-level programming language?",
+    "correctAnswer": "Assembly",
+    "options": [
+      "C++",
+      "Pascal",
+      "Java",
+      "Assembly"
+    ],
+    "explanation":"Assembly is considered a low-level programming lanuage."
+  },
+  {
+    "questionType": "true_false",
+    "questionText": "The Windows 7 operating system has three main editions.",
+    "correctAnswer": "False",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation": "Windows 7 OS has six editions which are, Starter, Home Basic, Home Premium, Profession, Enterprise, and Ultimate."
+  },
+  {
+    "questionType": "image_selection",
+    "questionText": "What of these logos is not programming language?",
+    "correctAnswer": "https://www.clipartmax.com/png/middle/234-2342873_anaconda-on-twitter-anaconda-python.png",
+    "options": [
+      "https://www.clipartmax.com/png/middle/234-2342873_anaconda-on-twitter-anaconda-python.png",
+      "https://1000logos.net/wp-content/uploads/2020/09/Java-Emblem.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1200px-R_logo.svg.png",
+      "https://www.pngitem.com/pimgs/m/12-120179_best-free-ruby-png-ruby-programming-language-logo.png"
+    ],
+    "explanation": "Andaconda is not a programming language."
+  },
+  {
+    "questionType": "dropdown_selection",
+    "questionText": "_______ considered the brain of a computer?",
+    "correctAnswer": "Central Processing Unit",
+    "answerFieldId": "answer_to_question",
+    "options": [
+      "Graphics Processing Unit",
+      "Central Processing Unit",
+      "Motherboard",
+      "Power Supply Unit"
+    ],
+    "explanation":"The Central Processing Unit is considered the brain of a computer."
+  },
+  {
+    "questionType": "image_selection",
+    "questionText": "What major programming language does Unreal Engine 4 use?",
+    "correctAnswer": "https://e7.pngegg.com/pngimages/46/626/png-clipart-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template.png",
+    "options": [
+      "https://hwu71.github.io/photos/asm.png",
+      "https://e7.pngegg.com/pngimages/46/626/png-clipart-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template.png",
+      "https://raw.githubusercontent.com/wingsuitist/ecmascript-logo/master/es-ecmascript-logo.png",
+      "https://fwangzones.com/wp-content/uploads/2020/08/C.png"
+    ],
+    "explanation": "Unreal Engine uses C++."
+  },
+  {
+    "questionType": "text_input",
+    "questionText": "How many kilobytes in one gigabyte?",
+    "correctAnswer": "1000000",
+    "answerFieldId": "answer_to_question",
+    "explanation": "There is 1000000 kilobytes in one gigabyte."
+  },
+  {
+    "questionType": "true_false",
+    "questionText": "The programming language Python is based off a modified version of JavaScript.",
+    "correctAnswer": "False",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation":"Python is not based of a modified version of JavaScript but rather Python is written in C."
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionText": "What does the name of technology company HP stands for?",
+    "correctAnswer": "Hewlett-Packard",
+    "options": [
+      "Hellman-Pohl",
+      "Husker-Pollosk",
+      "Hewlett-Packard",
+      "Howard Packmann"
+    ],
+    "explanation": "The letters HP of the techonology company stands for Hewlett-Packard."
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionText": "Which programming language shares their name with an island in Indonesia?",
+    "correctAnswer": "Java",
+    "options": [
+      "Jakarta",
+      "Python",
+      "Ruby",
+      "Java"
+    ],
+    "explanation": "Java shares a name with an island in Indoesia."
+  },
+  {
+    "questionType": "dropdown_selection",
+    "questionText": "Node.js uses _______ as a coding language.",
+    "correctAnswer": "JavaScript",
+    "answerFieldId": "answer_to_question",
+    "options": [
+      "JavaSource",
+      "JavaScript",
+      "Java",
+      "C++"
+    ],
+    "explanation":"In Python, when a function is defined inside it is called a method."
+  },
+  {
+    "questionType": "text_input",
+    "questionText": "What does LAN stand for?",
+    "correctAnswer": "Local Area Network",
+    "answerFieldId": "answer_to_question",
+    "explanation": "LAN in networking stands for Local Area Network."
+  },
+  {
+    "questionType": "true_false",
+    "questionText": "URL stands for Uniform Resource Locator.",
+    "correctAnswer": "True",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation":"URL stands for Uniform Resource Locator."
+  },
+  {
+    "questionType": "text_input",
+    "questionText": "What is the HTML tag that defines an unordered list?",
+    "correctAnswer": "<ul>",
+    "answerFieldId": "answer_to_question",
+    "explanation":"<ul> defines an unordered list"
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionText": "What is id() function used for in Python?",
+    "correctAnswer": "Id returns the identity of the object assigned to.",
+    "options": [
+      "Objects do no have a unique ID",
+      "Id returns the identity of the object assigned to.",
+      "All functions mentioned",
+      "None of the functions mentioned"
+    ],
+    "explanation":"Each object in Python has a unique id. id() function will return a object’s id."
+  },
+  {
+    "questionType": "text_input",
+    "questionText": "A list is [2, 9, 8, 6, 30, 29, 16, 86], how will this list look like after doing list.pop(1)",
+    "correctAnswer": "[2, 8, 6, 30, 29, 16, 86]",
+    "answerFieldId": "answer_to_question",
+    "explanation":"Doing pop(i) removes the i index element from the list. Because the list starts at zero it removes the second number."
+  },
+  {
+    "questionType": "text_input",
+    "questionText": "What style property do you use to change the background color of an element?",
+    "correctAnswer": "background-color",
+    "answerFieldId": "answer_to_question",
+    "explanation": "You can edit the background color of an element with back-color."
+  },
+  {
+    "questionType": "true_false",
+    "questionText": "Dreamweaver is a popular HTML editor from Adobe.",
+    "correctAnswer": "True",
+    "options": [
+      "True",
+      "False"
+    ],
+    "explanation":"Dreamweaver is a program built to create and edit website by Adobe."
+  },
+  {
+    "questionType": "dropdown_selection",
+    "questionText": "What type of data type is this object? L = [8, 'hello', 5, 2]",
+    "correctAnswer": "List",
+    "answerFieldId": "answer_to_question",
+    "options": [
+      "Tuple",
+      "Array",
+      "Boolean",
+      "List"
+    ],
+    "explanation":"[] indicate a list in Python."
+  }
+]
