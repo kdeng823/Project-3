@@ -1,0 +1,216 @@
+<html>
+
+<head>
+  <!--  Bootstap dependencies -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+  <!-- Handlebars library -->
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+  <!-- Script for application  -->
+  <link rel="stylesheet" href="styles.css" />
+  <script src="scripts.js"> </script>
+
+</head>
+
+<body>
+  <div id="hud" class="col">
+    <div id="hud-item" style="float: left;">
+      <div id="questions_answered">
+        <p class="hud-prefix"></p>
+      </div>
+    </div>
+    <div id="hud-item" style="text-align: center;">
+      <div class="hud-prefix" id="clock">
+        00:00:00
+      </div>
+    </div>
+    <div id="hud-item" style="float: right;">
+      <div id="current_score">
+        <p class="hud-prefix"></p>
+      </div>
+    </div>
+  </div>
+  <div id="widget_view">
+  </div>
+</body>
+
+
+
+<script id="intro_view" type="text/x-handlebars-template">
+    <div class="jumbotron text-center" style="background-color:#202124; margin-bottom: 0px">
+      <h1 style="font-family:Century Gothic">Quiz Selection</h1>
+    </div>
+      <div class="text-center">
+          <label for = "name" style="font-family:Century Gothic"> Name: </label> <input id = "name" placeholder="Please type enter a name" type="text">
+          <button id="submit-btn" onclick="f1();startstopClock();" data-action="{{this.action}}">{{this.action}}</button>
+      </div>
+      <div style= "margin-top: 50px">
+        <div class="button-wrap">
+          <p class="lead">Select a Quiz:</p>
+          <input class ="hidden radio-label" type="radio" onclick="f1()"  name="quiz1" id = "quiz1">
+          <label class = "button-label" for="quiz1">
+            Quiz 1
+          </label>
+          <input class ="hidden radio-label" type="radio" onclick="f1()" name="quiz1" id = "quiz2">
+          <label class = "button-label" for="quiz2">
+            Quiz 2
+        </label>
+      </div>
+    </div>
+  </script>
+
+<script id="question_view_multiple_choice" type="text/x-handlebars-template">
+    <div class="container">
+        <div class="col">
+        <div class="justify-center flex-column">
+          <h2 id="question">{{this.questionText}}</h2>
+        </div>
+          <div style="text-align:center;">
+          <div class="choice">
+            <button class="button-label" style="margin-right:50px" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button>
+            <button class="button-label" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button>
+          </div>
+          <div class="choice">
+            <button class="button-label" style="margin-right:50px" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[2]}}">{{this.options.[2]}}</button>
+            <button class="button-label" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[3]}}">{{this.options.[3]}}</button>
+          </div>
+        </div>
+          <br>
+          <div style="text-align: right;">
+            <button class="btn btn-danger float-right" data-action="submit">Submit</button>
+          </div>
+      </div>
+    </div>
+  </script>
+
+
+<script id="question_view_true_false" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="justify-center flex-column">
+          <div class="col">
+            <div>
+              <h2 id="question"> {{this.questionText}}</h2>
+              <div style="text-align:center">
+              <button class="button-label" id="choice" data-action="answer" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button>
+              <button class="button-label" id="choice" data-action="answer" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button>
+              <br>
+              <button class="btn btn-danger float-right" data-action="submit">Submit</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </script>
+
+<script id="question_view_text_input" type="text/x-handlebars-template">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div style="text-align:center">
+          <h2 style="text-align:center"> {{this.questionText}} </h2>
+          <br>
+          <div style="text-align: left;">
+            <input type="text" id="{{this.answerFieldId}}" class="text-input" name="answer"> <br>
+          </div>
+            <button class="btn btn-danger float-right" data-action="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script id="question_view_dropdown_selection" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <div>
+              <h2>{{this.questionText}}</h2>
+              <select id=list>
+                <option data-action="answer" value="{{this.options.[0]}}" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</option>
+                <option data-action="answer" value="{{this.options.[1]}}" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</option>
+                <option data-action="answer" value="{{this.options.[2]}}" data-answer="{{this.options.[2]}}">{{this.options.[2]}}</option>
+                <option data-action="answer" value="{{this.options.[3]}}" data-answer="{{this.options.[3]}}">{{this.options.[3]}}</option>
+              </select>
+              <button class="btn btn-danger float-right" data-action="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </script>
+
+<script id="question_view_image_selection" type="text/x-handlebars-template">
+  <div class="container">
+    <div class="col">
+    <div class="justify-center flex-column">
+      <h2 id="question">{{this.questionText}}</h2>
+    </div>
+      <div style="text-align:center;">
+      <div class="choice">
+        <button class="button-label" style="margin-right:50px" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[0]}}"><img style="max-width: 150px;" data-action="answer" data-answer="{{this.options.[0]}}" src="{{this.options.[0]}}"></button>
+        <button class="button-label" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[1]}}"><img style="max-width: 150px;" data-action="answer" data-answer="{{this.options.[0]}}" src="{{this.options.[1]}}"></button>
+      </div>
+      <div class="choice">
+        <button class="button-label" style="margin-right:50px" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[2]}}"><img  style="max-width: 150px;" data-action="answer" data-answer="{{this.options.[0]}}" src="{{this.options.[2]}}"></button>
+        <button class="button-label" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[3]}}"><img  style="max-width: 150px;" data-action="answer" data-answer="{{this.options.[0]}}" src="{{this.options.[3]}}"></button>
+      </div>
+    </div>
+      <br>
+      <div style="text-align: right;">
+        <button class="btn btn-danger float-right" data-action="submit">Submit</button>
+      </div>
+  </div>
+</div>
+  </script>
+
+
+<script id="feedback_view_correct" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <div>
+              <h2> Good work! </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+  </script>
+
+<script id="feedback_view_incorrect" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <div style="text-align:center">
+              <h2> Incorrect </h2>
+              <div style="padding-bottom: 10px;">
+              <span>{{this.explanation}}</span>
+              </div>
+              <div>
+              <button class="btn btn-danger float-center" data-action="next">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </script>
+
+<script id="end_view" type="text/x-handlebars-template">
+      <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id=finalMessage></div>
+                  <br>
+                  <button class="btn btn-danger float-center" data-action="Start_Again">Re-take Quiz</button>
+                  <button class="btn btn-danger float-center" data-action="intro_page">Home Page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </script>
+
+</html>
