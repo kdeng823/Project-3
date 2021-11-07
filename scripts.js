@@ -71,7 +71,7 @@ function f1() {
   var quiz2 = document.getElementById("quiz2");
 
   if (quiz1.checked == true)
-    fetch("quiz1.json")
+    fetch("https://my-json-server.typicode.com/kdeng823/QuizServer1")
       .then(res => {
         console.log(res);
         return res.json();
@@ -83,7 +83,7 @@ function f1() {
         console.error(err);
       });
   else if (quiz2.checked == true)
-    fetch("quiz2.json")
+    fetch("https://my-json-server.typicode.com/kdeng823/QuizServer2")
       .then(res => {
         console.log(res);
         return res.json();
