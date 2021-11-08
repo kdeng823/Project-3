@@ -215,6 +215,7 @@ function handle_widget_event(e) {
 
   // Handle end_view.
   if (appState.current_view == "#end_view") {
+    startstopClock();
     let final_Score = ((appState.current_score / appState.answered_questions) * 100);
     if (final_Score < 80) {
       document.getElementById("finalMessage").innerHTML = "Final Score: " + final_Score + "% <br> Unfortunately " + user + ", you failed the quiz.";
