@@ -38,13 +38,13 @@
   },
   {
     "questionType": "true_false",
-    "questionText": "Andaconda is a programming language.",
+    "questionText": "Anaconda is a programming language.",
     "correctAnswer": "False",
     "options": [
       "True",
       "False"
     ],
-    "explanation": "Andaconda is not a programming language."
+    "explanation": "Anaconda is not a programming language."
   },  
   {
     "questionType": "true_false",
