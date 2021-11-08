@@ -63,7 +63,7 @@ function resetClock(){
   minutes = 0;
   hours = 0;
   document.getElementById("clock").innerHTML = "00:00:00";
-  document.getElementById("startStop").innerHTML = "Start";
+  document.getElementById("startStopClock").innerHTML = "Start";
 }
 
 function f1() {
